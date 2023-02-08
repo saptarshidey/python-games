@@ -1,6 +1,8 @@
 import sys
 import pygame
+
 from config import Config
+from ship import Ship
 
 class AlienInvasion:
     def __init__(self):
@@ -10,6 +12,7 @@ class AlienInvasion:
         self.clock = pygame.time.Clock()
         self.running = True
         self.bgcolor = Config.BACKGROUND_COLOR
+        self.ship = Ship(self)
 
     def run(self):
         while self.running:
@@ -20,6 +23,7 @@ class AlienInvasion:
 
             # drawing logic
             self.screen.fill(self.bgcolor)
+            self.ship.draw()
 
             # refresh display
             pygame.display.update()
