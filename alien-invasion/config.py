@@ -4,3 +4,4 @@ class Config:
     SCREEN_HEIGHT = 800
     BACKGROUND_COLOR = (230, 230, 230)
     FPS = 60
+    SHIP_IMAGE_PATH = "assets/ship.bmp"

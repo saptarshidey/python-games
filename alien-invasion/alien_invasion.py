@@ -8,7 +8,8 @@ class AlienInvasion:
     def __init__(self):
         pygame.init()
         pygame.display.set_caption("Alien Invasion")
-        self.screen = pygame.display.set_mode((Config.SCREEN_WIDTH, Config.SCREEN_HEIGHT))
+        #self.screen = pygame.display.set_mode((Config.SCREEN_WIDTH, Config.SCREEN_HEIGHT))
+        self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         self.clock = pygame.time.Clock()
         self.running = True
         self.bgcolor = Config.BACKGROUND_COLOR
